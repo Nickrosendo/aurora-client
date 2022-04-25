@@ -5,12 +5,6 @@ exports[`should render homepage matching snapshot 1`] = `
   className="css-h74a88"
   role="main"
 >
-   
-  <h2
-    className="chakra-heading css-xi606m"
-  >
-     hello world 
-  </h2>
   AdoptionList
 </div>
 `;

@@ -1,6 +1,9 @@
 import { Heading, Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
 
+import { AdoptionList } from "@root/components";
+import { mock_data } from "@root/data";
+
 const Home: NextPage = () => {
   return (
     <Box
@@ -10,8 +13,7 @@ const Home: NextPage = () => {
       justifyContent="center"
       h="100vh"
     >
-      {" "}
-      <Heading textAlign="center"> hello world </Heading>
+      <AdoptionList items={mock_data} />
     </Box>
   );
 };

@@ -11,5 +11,6 @@ exports[`should render homepage matching snapshot 1`] = `
   >
      hello world 
   </h2>
+  AdoptionList
 </div>
 `;

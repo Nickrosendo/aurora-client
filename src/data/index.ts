@@ -1,1 +1,1 @@
-export * from './adoptions.data';
+export * from "./adoptions.data";

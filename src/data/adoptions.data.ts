@@ -1,3 +1,3 @@
-import { IAdoptionItem } from "@root/types";
+import { IAdoptionItem } from '@root/types';
 
-export const mock_data: Array<IAdoptionItem> = [{ title: "foo" }];
+export const mock_data: Array<IAdoptionItem> = [{ title: 'foo' }];

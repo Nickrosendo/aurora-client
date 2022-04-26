@@ -1,14 +1,14 @@
-import React from "react";
-import { Box } from "@chakra-ui/react";
+import React from 'react';
+import { Box } from '@chakra-ui/react';
 
-import { IAdoptionItem } from "@root/types";
+import { IAdoptionItem } from '@root/types';
 
 export interface AdoptionListItemProps {
   item: IAdoptionItem;
 }
 
 export const AdoptionListItem: React.FC<AdoptionListItemProps> = ({
-  item = { title: "foo" },
+  item = { title: 'foo' },
 }) => {
   return (
     <Box

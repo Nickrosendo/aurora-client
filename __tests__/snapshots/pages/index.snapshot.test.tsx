@@ -4,6 +4,7 @@ import Index from '@root/pages/index';
 
 jest.mock('@root/components', () => ({
   AdoptionList: jest.fn().mockImplementation(() => <>AdoptionList</>),
+  Header: jest.fn().mockImplementation(() => <>Header</>),
 }));
 
 it('should render homepage matching snapshot', () => {

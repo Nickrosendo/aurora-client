@@ -9,9 +9,9 @@ import {
   DrawerCloseButton,
   useDisclosure,
 } from '@chakra-ui/react';
-import { MdMenu } from 'react-icons/md';
+import { FaUserCircle } from 'react-icons/fa';
 
-export const HeaderMenu: React.FC = () => {
+export const ProfileMenu: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const iconBtnRef = React.useRef<HTMLButtonElement>(null);
 
@@ -19,15 +19,15 @@ export const HeaderMenu: React.FC = () => {
     <>
       <IconButton
         aria-label="open menu"
-        title="open-drawer-menu"
+        title="profile-menu"
         role="button"
         ref={iconBtnRef}
-        icon={<Icon as={MdMenu} h={'1.5rem'} w={'1.5rem'} />}
+        icon={<Icon as={FaUserCircle} h={'1.5rem'} w={'1.5rem'} />}
         onClick={onOpen}
       />
       <Drawer
         isOpen={isOpen}
-        placement="left"
+        placement="right"
         onClose={onClose}
         finalFocusRef={iconBtnRef}
       >

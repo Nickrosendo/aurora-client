@@ -10,7 +10,7 @@ export interface AdoptionListProps {
 
 export const AdoptionList: React.FC<AdoptionListProps> = ({ items = [] }) => {
   return (
-    <VStack spacing="2" title="adoption-list-container" w="full" p="2">
+    <VStack spacing="5" title="adoption-list-container" w="full" p="2">
       {items?.map((item: IAdoptionItem) => (
         <AdoptionListItem item={item} key={item.title} />
       ))}

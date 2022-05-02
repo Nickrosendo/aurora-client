@@ -1,1 +1,1 @@
-export * from "./adoption-item.type";
+export * from './adoption-item.type';

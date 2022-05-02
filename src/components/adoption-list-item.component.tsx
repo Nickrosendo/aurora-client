@@ -1,22 +1,22 @@
-import React from "react";
-import { Box, Image, Badge } from "@chakra-ui/react";
+import React from 'react';
+import { Box, Image, Badge } from '@chakra-ui/react';
 
-import { IAdoptionItem } from "@root/types";
+import { IAdoptionItem } from '@root/types';
 
 export interface AdoptionListItemProps {
   item: IAdoptionItem;
 }
 
 export const AdoptionListItem: React.FC<AdoptionListItemProps> = ({
-  item = { title: "foo" },
+  item = { title: 'foo' },
 }) => {
   const property = {
-    imageUrl: "https://bit.ly/2Z4KKcF",
-    imageAlt: "Rear view of modern home with pool",
+    imageUrl: 'https://bit.ly/2Z4KKcF',
+    imageAlt: 'Rear view of modern home with pool',
     beds: 3,
     baths: 2,
-    title: "Modern home in city center in the heart of historic Los Angeles",
-    formattedPrice: "$1,900.00",
+    title: 'Modern home in city center in the heart of historic Los Angeles',
+    formattedPrice: '$1,900.00',
     reviewCount: 34,
     rating: 4,
   };

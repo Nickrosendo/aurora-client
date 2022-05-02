@@ -5,6 +5,7 @@ exports[`should render homepage matching snapshot 1`] = `
   className="css-h74a88"
   role="main"
 >
+  Header
   AdoptionList
 </div>
 `;

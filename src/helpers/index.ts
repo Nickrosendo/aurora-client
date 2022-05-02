@@ -1,1 +1,1 @@
-export * from "./object-id.helper";
+export * from './object-id.helper';

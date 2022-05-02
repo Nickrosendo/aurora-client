@@ -1,8 +1,8 @@
-import React from "react";
-import { Box, VStack } from "@chakra-ui/react";
+import React from 'react';
+import { Box, VStack } from '@chakra-ui/react';
 
-import { AdoptionListItem } from "./adoption-list-item.component";
-import type { IAdoptionItem } from "@root/types";
+import { AdoptionListItem } from './adoption-list-item.component';
+import type { IAdoptionItem } from '@root/types';
 
 export interface AdoptionListProps {
   items: Array<IAdoptionItem>;

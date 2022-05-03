@@ -4,8 +4,7 @@ import { objectId } from '@root/helpers';
 export const mock_data: Array<IAdoptionItem> = [
   {
     id: objectId(),
-    imageUrl:
-      'https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/images/dogs/black-puppy-dog.png',
     title: 'black puppy dog',
     tags: ['puppy', 'docile', 'healthy'],
     sex: 'male',
@@ -14,16 +13,14 @@ export const mock_data: Array<IAdoptionItem> = [
     location: 'Sao Paulo, Brazil',
     owner: {
       name: 'Adoption House',
-      image:
-        'https://cdn2.vectorstock.com/i/thumb-large/75/66/abstract-logo-template-vector-25147566.jpg',
+      image: '/images/users/adoption-house.png',
       type: UserTypes.ORGANIZATION,
     },
     pretenders: 8,
   },
   {
     id: objectId(),
-    imageUrl:
-      'https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/images/dogs/red-female-shiba.png',
     title: 'red female shiba',
     tags: ['shiba', 'puppy', 'neutered'],
     sex: 'female',
@@ -32,16 +29,14 @@ export const mock_data: Array<IAdoptionItem> = [
     location: 'Curitiba, Brazil',
     owner: {
       name: 'Adoption House',
-      image:
-        'https://cdn2.vectorstock.com/i/thumb-large/75/66/abstract-logo-template-vector-25147566.jpg',
+      image: '/images/users/adoption-house.png',
       type: UserTypes.ORGANIZATION,
     },
     pretenders: 24,
   },
   {
     id: objectId(),
-    imageUrl:
-      'https://images.pexels.com/photos/235805/pexels-photo-235805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/images/dogs/white-big-dog.png',
     title: 'white big dog',
     tags: ['big', 'healthy', 'neutered'],
     sex: 'male',
@@ -50,16 +45,14 @@ export const mock_data: Array<IAdoptionItem> = [
     location: 'Sao Paulo, Brazil',
     owner: {
       name: 'Adoption House',
-      image:
-        'https://cdn2.vectorstock.com/i/thumb-large/75/66/abstract-logo-template-vector-25147566.jpg',
+      image: '/images/users/adoption-house.png',
       type: UserTypes.ORGANIZATION,
     },
     pretenders: 3,
   },
   {
     id: objectId(),
-    imageUrl:
-      'https://images.pexels.com/photos/2664417/pexels-photo-2664417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/images/dogs/beautiful-puppy-corgi.png',
     title: 'beautiful puppy corgi',
     tags: ['corgi', 'puppy'],
     sex: 'male',
@@ -68,16 +61,14 @@ export const mock_data: Array<IAdoptionItem> = [
     location: 'Bahia, Brazil',
     owner: {
       name: 'Adoption House',
-      image:
-        'https://cdn2.vectorstock.com/i/thumb-large/75/66/abstract-logo-template-vector-25147566.jpg',
+      image: '/images/users/adoption-house.png',
       type: UserTypes.ORGANIZATION,
     },
     pretenders: 30,
   },
   {
     id: objectId(),
-    imageUrl:
-      'https://images.pexels.com/photos/9259432/pexels-photo-9259432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/images/dogs/big-german-sheppard.png',
     title: 'big german sheppard',
     tags: ['german-sheppard', 'big', 'trained'],
     sex: 'female',
@@ -86,16 +77,14 @@ export const mock_data: Array<IAdoptionItem> = [
     location: 'Rio de Janeiro, Brazil',
     owner: {
       name: 'Adoption House',
-      image:
-        'https://cdn2.vectorstock.com/i/thumb-large/75/66/abstract-logo-template-vector-25147566.jpg',
+      image: '/images/users/adoption-house.png',
       type: UserTypes.ORGANIZATION,
     },
     pretenders: 23,
   },
   {
     id: objectId(),
-    imageUrl:
-      'https://images.pexels.com/photos/6907083/pexels-photo-6907083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/images/dogs/wolf-dog.png',
     title: 'wolf dog',
     tags: ['wolf', 'big', 'trained'],
     sex: 'male',
@@ -104,16 +93,14 @@ export const mock_data: Array<IAdoptionItem> = [
     location: 'Santa Catarina, Brazil',
     owner: {
       name: 'Adoption House',
-      image:
-        'https://cdn2.vectorstock.com/i/thumb-large/75/66/abstract-logo-template-vector-25147566.jpg',
+      image: '/images/users/adoption-house.png',
       type: UserTypes.ORGANIZATION,
     },
     pretenders: 15,
   },
   {
     id: objectId(),
-    imageUrl:
-      'https://images.pexels.com/photos/1619690/pexels-photo-1619690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/images/dogs/pomeranian-lulu-puppy.png',
     title: 'pomeranian lulu puppy',
     tags: ['puppy', 'lulu', 'healthy'],
     sex: 'female',
@@ -122,8 +109,7 @@ export const mock_data: Array<IAdoptionItem> = [
     location: 'Santa Catarina, Brazil',
     owner: {
       name: 'Adoption House',
-      image:
-        'https://cdn2.vectorstock.com/i/thumb-large/75/66/abstract-logo-template-vector-25147566.jpg',
+      image: '/images/users/adoption-house.png',
       type: UserTypes.ORGANIZATION,
     },
     pretenders: 50,

@@ -2,8 +2,6 @@ import React from 'react';
 
 import { HStack, Box, useColorMode, Container } from '@chakra-ui/react';
 
-import { Menu } from 'react-icons/fi';
-
 import { MainMenu, ProfileMenu } from '@root/components';
 
 export const Header: React.FC = () => {

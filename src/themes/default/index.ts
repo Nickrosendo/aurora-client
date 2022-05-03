@@ -10,13 +10,13 @@ import { styles } from './styles';
 import { colors } from './colors';
 
 // Components overrides
-import { Input } from './components';
+import * as components from './components';
 
 export const defaultTheme = extendTheme({
   config,
   styles,
   colors,
   components: {
-    Input,
+    ...components,
   },
 });

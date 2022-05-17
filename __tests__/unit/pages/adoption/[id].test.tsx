@@ -4,7 +4,7 @@
 
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Home from '@root/pages/index';
+import AdoptionDetail from '@root/pages/adoption/[id]';
 
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
@@ -20,9 +20,9 @@ Object.defineProperty(window, 'matchMedia', {
   })),
 });
 
-describe('Home page tests', () => {
+describe('AdoptionDetail page tests', () => {
   it('renders the header component', () => {
-    render(<Home />);
+    render(<AdoptionDetail />);
 
     const element = screen.getByRole('main');
 

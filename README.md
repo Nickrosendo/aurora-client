@@ -10,6 +10,51 @@ npm run dev
 yarn dev
 ```
 
+## TODO'S
+
+[ ] - Replace mock data with real adoptions api data;
+
+[ ] - Connect with back-end for authentication;
+
+[ ] - Style /profile/[id] page;
+
+[ ] - Style /adoption/[id] page;
+
+[ ] - Style /adoption/new page;
+
+[ ] - Style security settings page;
+
+[ ] - Create footer component;
+
+### Routes
+
+[ x ] - Include /adoption/[id] route for adoption-item details.
+
+[  ] - Include /adoption/new route for users to include their adoptions.
+
+[ ] - Include /profile/[id] details route(for users and organizations).
+
+
+### Header
+
+[ ] - Include search bar;
+
+[ ] - Include donation button in left drawer component.
+
+[ ] - Include colormode toggle button in left drawer component.
+
+### Right Drawer
+
+[ ] - Populate right drawer with link to profile page. 
+
+[ ] - Populate right drawer with link to security settings page. 
+
+[ ] - Include logout button on right drawer. 
+
+[ ] - Only show right drawer if the user is authenticated;
+
+[ ] - Implement authentication mechanism;
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.

@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Index from '@root/pages/index';
+import AdoptionDetail from '@root/pages/adoption/[id]';
 
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
@@ -18,11 +18,10 @@ Object.defineProperty(window, 'matchMedia', {
 
 jest.mock('@root/components', () => ({
   ThemeContainer: jest.fn().mockImplementation(() => <>ThemeContainer</>),
-  AdoptionList: jest.fn().mockImplementation(() => <>AdoptionList</>),
   Header: jest.fn().mockImplementation(() => <>Header</>),
 }));
 
 it('should render homepage matching snapshot', () => {
-  const tree = renderer.create(<Index />).toJSON();
+  const tree = renderer.create(<AdoptionDetail />).toJSON();
   expect(tree).toMatchSnapshot();
 });

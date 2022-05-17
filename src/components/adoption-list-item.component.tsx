@@ -87,7 +87,7 @@ export const AdoptionListItem: React.FC<AdoptionListItemProps> = ({
             ))}
         </Box>
 
-        <Box mt="1" fontWeight="bold" as="h4" lineHeight="tight" isTruncated>
+        <Box mt="1" fontWeight="bold" as="h4" lineHeight="tight">
           {item.title}
         </Box>
 

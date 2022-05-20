@@ -4,18 +4,18 @@ import type { NextPage, NextPageContext } from 'next';
 import { ThemeContainer, Header, AdoptionList } from '@root/components';
 import { DefaultPageTypes } from '@root/types';
 
-const AdoptionDetail: NextPage<DefaultPageTypes> = ({ cookies = '' }) => {
+const ProfileDetail: NextPage<DefaultPageTypes> = ({ cookies = '' }) => {
   return (
     <ThemeContainer cookies={cookies}>
       <Container maxW="container.lg" centerContent role="main">
         <Header />
-        AdoptionDetail
+        ProfileDetail
       </Container>
     </ThemeContainer>
   );
 };
 
-export default AdoptionDetail;
+export default ProfileDetail;
 
 export function getServerSideProps({ req }: NextPageContext) {
   return {

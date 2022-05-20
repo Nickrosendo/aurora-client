@@ -14,6 +14,7 @@ export interface ThemeContainerProps {
 
 export const ThemeContainer: React.FC<ThemeContainerProps> = ({
   children = <></>,
+  cookies = '',
 }) => {
   return (
     <ChakraProvider

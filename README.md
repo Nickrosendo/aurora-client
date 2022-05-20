@@ -24,16 +24,31 @@ yarn dev
 
 [ ] - Style security settings page;
 
+[ ] - Style signIn component;
+
+[ ] - Style signUp component;
+
+[ ] - Style authentication modal component;
+
+### Components
+
+[ ] - Create signIn component;
+
+[ ] - Create signUp component;
+
+[ ] - Create authentication modal containing signIn and signUp options;
+
 [ ] - Create footer component;
 
 ### Routes
 
 [ x ] - Include /adoption/[id] route for adoption-item details.
 
-[  ] - Include /adoption/new route for users to include their adoptions.
+[ x ] - Include /adoption/new route for users to include their adoptions.
 
-[ ] - Include /profile/[id] details route(for users and organizations).
+[ x ] - Include /profile/[id] details route(for users and organizations).
 
+[ x ] - Include /security route(for password and authentication stuffs).
 
 ### Header
 

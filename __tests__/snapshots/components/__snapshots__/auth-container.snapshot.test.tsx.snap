@@ -8,12 +8,3 @@ exports[`should render AuthContainer component matching snapshot 1`] = `
    AuthContainer 
 </div>
 `;
-
-exports[`should render SignIn component matching snapshot 1`] = `
-<div
-  className="css-0"
-  title="sign-in"
->
-   signIn 
-</div>
-`;

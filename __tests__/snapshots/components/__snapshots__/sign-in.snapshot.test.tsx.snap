@@ -8,12 +8,3 @@ exports[`should render SignIn component matching snapshot 1`] = `
    signIn 
 </div>
 `;
-
-exports[`should render homepage matching snapshot 1`] = `
-<div
-  className="css-0"
-  title="sign-in"
->
-   signIn 
-</div>
-`;

@@ -32,13 +32,13 @@ yarn dev
 
 ### Components
 
-[ ] - Create signIn component;
+[ x ] - Create signIn component;
 
-[ ] - Create signUp component;
+[ x ] - Create signUp component;
 
-[ ] - Create authentication modal containing signIn and signUp options;
+[ x ] - Create authentication modal containing signIn and signUp options;
 
-[ ] - Create footer component;
+[ x ] - Create footer component;
 
 ### Routes
 

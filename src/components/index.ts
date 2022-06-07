@@ -1,3 +1,5 @@
+export * from './search-bar.component';
+export * from './key-bindings.component';
 export * from './adoption-list.component';
 export * from './adoption-list-item.component';
 export * from './main-menu.component';

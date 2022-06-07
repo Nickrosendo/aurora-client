@@ -2,7 +2,7 @@ import React from 'react';
 
 import { HStack, Box, useColorMode, Container } from '@chakra-ui/react';
 
-import { MainMenu, ProfileMenu } from '@root/components';
+import { ProfileMenu } from '@root/components';
 
 export const Header: React.FC = () => {
   return (
@@ -17,11 +17,10 @@ export const Header: React.FC = () => {
           <HStack
             spacing={2}
             align="center"
-            justifyContent="space-between"
+            justifyContent="flex-end"
             h="100%"
             w="100%"
           >
-            <MainMenu />
             <ProfileMenu />
           </HStack>
         </HStack>

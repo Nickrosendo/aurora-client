@@ -23,7 +23,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   searchKeys = ['ctrl', 'k'],
   onSearch = () => null,
 }) => {
-  const inputRef = React.useRef(null);
+  const inputRef = React.useRef<HTMLInputElement>(null);
 
   useEventListener('keydown', (event) => {
     const isMac = /(Mac|iPhone|iPod|iPad)/i.test(navigator?.platform);

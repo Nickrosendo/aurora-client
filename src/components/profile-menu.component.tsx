@@ -13,10 +13,10 @@ import { FaUserCircle } from 'react-icons/fa';
 import { AuthContainer } from './auth-container.component';
 
 export interface ProfileMenuProps {
-  isAuth: boolean;
+  isAuth?: boolean;
 }
 
-export const ProfileMenu: React.FC<ProfileMenu> = ({ isAuth = false }) => {
+export const ProfileMenu: React.FC<ProfileMenuProps> = ({ isAuth = false }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const iconBtnRef = React.useRef<HTMLButtonElement>(null);
 

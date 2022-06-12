@@ -8,8 +8,10 @@ import {
   DrawerBody,
   DrawerCloseButton,
   useDisclosure,
+  Button,
 } from '@chakra-ui/react';
 import { MdMenu } from 'react-icons/md';
+import Link from 'next/link';
 
 export const MainMenu: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -34,7 +36,13 @@ export const MainMenu: React.FC = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerBody>foo</DrawerBody>
+          <DrawerBody pt="4rem">
+            <Link href="/">
+              <Button variant="outline" w="full" justifyContent="left">
+                Home
+              </Button>
+            </Link>
+          </DrawerBody>
         </DrawerContent>
       </Drawer>
     </>

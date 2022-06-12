@@ -12,6 +12,7 @@ import {
   Button,
   useStyleConfig,
 } from '@chakra-ui/react';
+import Link from 'next/link';
 import { MdLocationOn } from 'react-icons/md';
 import {
   FaUsers,
@@ -44,7 +45,6 @@ export const AdoptionDetails: React.FC<AdoptionDetailsProps> = ({
         borderRadius="lg"
         overflow="hidden"
         title="adoption-list-item"
-        cursor="pointer"
       >
         <Box h="30rem">
           <Img
@@ -57,22 +57,26 @@ export const AdoptionDetails: React.FC<AdoptionDetailsProps> = ({
         </Box>
 
         <Box p="6">
-          <Grid
-            templateRows="repeat(4, 1fr)"
-            templateColumns="repeat(2, 50%)"
-            gap={4}
-          >
+          <Grid templateRows="repeat(4, 1fr)" templateColumns="repeat(2, 50%)">
             <GridItem rowSpan={1} colSpan={1}>
               {item.owner && (
-                <Flex gap={2} alignItems="center" my="2">
-                  <Img
-                    borderRadius="full"
-                    src={item.owner?.image}
-                    alt={item.owner?.name}
-                    boxSize="2rem"
-                  />
-                  <Text fontWeight="semibold"> {item.owner.name} </Text>
-                </Flex>
+                <Link href={`/profile/${item.owner.id}`}>
+                  <Button variant="unstyled" mb="2" pl="0">
+                    <Flex
+                      gap={2}
+                      alignItems="center"
+                      justifyContent="flex-start"
+                    >
+                      <Img
+                        borderRadius="full"
+                        src={item.owner?.image}
+                        alt={item.owner?.name}
+                        boxSize="2rem"
+                      />
+                      <Text fontWeight="semibold"> {item.owner.name} </Text>
+                    </Flex>
+                  </Button>
+                </Link>
               )}
             </GridItem>
             <GridItem rowSpan={1} colSpan={1}>
@@ -112,19 +116,15 @@ export const AdoptionDetails: React.FC<AdoptionDetailsProps> = ({
                 minHeight="3rem"
                 fontWeight="normal"
                 borderRadius="md"
-                color="white"
-                bg="brand.500"
                 as="p"
                 lineHeight="tight"
-                p="2"
               >
-                Cachorro fofinho que precisa de um lar.
+                {item.description}
               </Box>
             </GridItem>
 
-            <GridItem rowSpan={1} colSpan={1}>
+            <GridItem rowSpan={1} colSpan={2}>
               <Flex>
-                <Text mr="1"> age: </Text>
                 {item.age}
                 <Box as="span" color="gray.600" fontSize="sm">
                   / {item.ageType}
@@ -134,18 +134,17 @@ export const AdoptionDetails: React.FC<AdoptionDetailsProps> = ({
 
             <GridItem rowSpan={1} colSpan={1}>
               <Flex gap={1} alignItems="center">
-                <Text mr="1"> location: </Text>
                 <Icon as={MdLocationOn} h={'1rem'} w={'1rem'} />
                 {item.location}
               </Flex>
             </GridItem>
 
-            <GridItem rowSpan={1} colSpan={2}>
-              <Flex gap={1} alignItems="center" fontSize="1.5rem">
+            <GridItem rowSpan={1} colSpan={1}>
+              <Flex gap={1} alignItems="center" justifyContent="flex-end">
                 <Icon as={FaUsers} h={'2rem'} w={'2rem'} />
                 {item.pretenders}
-                <Button ml="2">
-                  <Icon as={FaPlus} h={'2rem'} w={'2rem'} />
+                <Button ml="1" size="sm" variant="ghost">
+                  <Icon as={FaPlus} h={'1rem'} w={'1rem'} />
                 </Button>
               </Flex>
             </GridItem>

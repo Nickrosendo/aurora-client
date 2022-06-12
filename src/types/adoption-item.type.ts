@@ -4,6 +4,7 @@ export interface IAdoptionItem {
   id: string;
   imageUrl: string;
   title: string;
+  description: string;
   tags?: string[];
   sex: SexType;
   age?: string;

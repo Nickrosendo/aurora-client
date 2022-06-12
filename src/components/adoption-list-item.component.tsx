@@ -13,6 +13,7 @@ import { MdLocationOn } from 'react-icons/md';
 import { FaUsers } from 'react-icons/fa';
 
 import { IAdoptionItem } from '@root/types';
+import { getRandomColor } from '@root/helpers';
 
 export interface AdoptionListItemProps {
   item: IAdoptionItem;
@@ -22,11 +23,6 @@ export const AdoptionListItem: React.FC<AdoptionListItemProps> = ({
   item = { title: 'foo' },
 }) => {
   const styles = useStyleConfig('AdoptionListItem');
-  const getRandomColor = () => {
-    const colors = ['orange', 'purple', 'teal', 'red', 'green'];
-    const randomIndex = Math.round(Math.random() * colors.length);
-    return colors[randomIndex];
-  };
 
   const property = {
     imageUrl: 'https://bit.ly/2Z4KKcF',

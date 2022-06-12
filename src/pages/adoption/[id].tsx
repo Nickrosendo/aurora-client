@@ -1,15 +1,24 @@
 import { Heading, Container } from '@chakra-ui/react';
 import type { NextPage, NextPageContext } from 'next';
 
-import { ThemeContainer, Header, AdoptionList } from '@root/components';
+import {
+  ThemeContainer,
+  Header,
+  AdoptionList,
+  AdoptionDetails,
+} from '@root/components';
 import { DefaultPageTypes } from '@root/types';
 
-const AdoptionDetail: NextPage<DefaultPageTypes> = ({ cookies = '' }) => {
+const AdoptionDetail: NextPage<DefaultPageTypes> = ({
+  cookies = '',
+  query = {},
+}) => {
+  const { id } = query;
   return (
     <ThemeContainer cookies={cookies}>
       <Container maxW="container.lg" centerContent role="main">
         <Header />
-        AdoptionDetail
+        <AdoptionDetails adoptionId={id} />
       </Container>
     </ThemeContainer>
   );
@@ -17,9 +26,10 @@ const AdoptionDetail: NextPage<DefaultPageTypes> = ({ cookies = '' }) => {
 
 export default AdoptionDetail;
 
-export function getServerSideProps({ req }: NextPageContext) {
+export function getServerSideProps({ req, query }: NextPageContext) {
   return {
     props: {
+      query,
       cookies: req?.headers?.cookie ?? '',
     },
   };

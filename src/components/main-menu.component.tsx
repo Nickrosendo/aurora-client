@@ -13,6 +13,8 @@ import {
 import { MdMenu } from 'react-icons/md';
 import Link from 'next/link';
 
+import { ColorModeToggle } from '@root/components';
+
 export const MainMenu: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const iconBtnRef = React.useRef<HTMLButtonElement>(null);
@@ -37,9 +39,15 @@ export const MainMenu: React.FC = () => {
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerBody pt="4rem">
+            <ColorModeToggle />
             <Link href="/">
-              <Button variant="outline" w="full" justifyContent="left">
-                Home
+              <Button variant="outline" w="full" justifyContent="left" mt="2">
+                Início
+              </Button>
+            </Link>
+            <Link href="/adoption/new">
+              <Button variant="outline" w="full" justifyContent="left" mt="2">
+                Nova adoção
               </Button>
             </Link>
           </DrawerBody>

@@ -13,3 +13,4 @@ export * from './footer.component';
 export * from './adoption-details.component';
 export * from './new-adoption-form.component';
 export * from './file-upload.component';
+export * from './colormode-toggle';

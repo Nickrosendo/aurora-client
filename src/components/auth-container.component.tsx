@@ -31,13 +31,13 @@ export const AuthContainer: React.FC<AuthContainerProps> = ({
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent title="auth-container">
-        <ModalHeader>Welcome to Aurora!</ModalHeader>
+        <ModalHeader>Bem-vindo à Aurora!</ModalHeader>
         <ModalCloseButton />
         <ModalBody p="4">
           <Tabs variant="enclosed" defaultIndex={initialAuthType}>
             <TabList>
-              <Tab>SignIn</Tab>
-              <Tab>SignUp</Tab>
+              <Tab>Entrar</Tab>
+              <Tab>Cadastrar</Tab>
             </TabList>
             <TabPanels>
               <TabPanel title="sign-in-tab">

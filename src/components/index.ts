@@ -11,3 +11,5 @@ export * from './sign-up.component';
 export * from './auth-container.component';
 export * from './footer.component';
 export * from './adoption-details.component';
+export * from './new-adoption-form.component';
+export * from './file-upload.component';

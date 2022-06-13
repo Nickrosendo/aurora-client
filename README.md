@@ -10,15 +10,26 @@ npm run dev
 yarn dev
 ```
 
+## DOING
+
+[ ] - Style /adoption/new page;
+
+
 ## TODO'S
 
 [ ] - Replace mock data with real adoptions api data;
+
+[ ] - Create bff endpoint `/api/adoptions` for adoptions data;
+
+[ ] - Create bff endpoint `/api/adoption/[id]` for adoption-detail data;
+
+[ ] - Create bff endpoint `/api/profile/[id]` for profile-detail data;
 
 [ ] - Connect with back-end for authentication;
 
 [ ] - Style /profile/[id] page;
 
-[ ] - Style /adoption/[id] page;
+[x] - Style /adoption/[id] page;
 
 [ ] - Style /adoption/new page;
 
@@ -52,7 +63,7 @@ yarn dev
 
 ### Header
 
-[ ] - Include search bar;
+[ ] - Include search bar on home page;
 
 [ ] - Include donation button in left drawer component.
 
